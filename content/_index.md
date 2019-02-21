@@ -14,6 +14,3 @@ So see all upcoming features or changes of each version see the github page.
 ```
 cf zero-downtime-push $appname
 ```
-
-### License stuff
-The header Photo was from pixpoetry on [Unsplash](https://unsplash.com/photos/jqrX8cSeVbQ)
