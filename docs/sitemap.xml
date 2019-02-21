@@ -3,25 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://happytobi.github.io/</loc>
+    <loc>https://cf-puppeteer.happytobi.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happytobi.github.io/categories/</loc>
+    <loc>https://cf-puppeteer.happytobi.com/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happytobi.github.io/licenses/</loc>
+    <loc>https://cf-puppeteer.happytobi.com/licenses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happytobi.github.io/tags/</loc>
+    <loc>https://cf-puppeteer.happytobi.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

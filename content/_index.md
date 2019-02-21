@@ -1,6 +1,6 @@
 ---
 title: "CF-Puppeteer: zero-downtime plugin"
-featured_image: '/images/background.jpg'
+featured_image: 'images/background.jpg'
 description: "The Zero-downtime plugin for you cf cli."
 ---
 
