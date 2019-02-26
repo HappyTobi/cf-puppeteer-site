@@ -14,6 +14,10 @@ pre  code {
 
 }
 
+.language-bash {
+  text-align: left !important;
+}
+
 pre {
   background-color: #222;
   color: #ddd;
