@@ -147,20 +147,22 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
 <h2 id="options">Options</h2>
 
-<pre><code>&quot;-f&quot;:                &quot;path to application manifest&quot;,
-&quot;-p&quot;:                &quot;path to application files&quot;,
-&quot;-s&quot;:                &quot;name of the stack to use&quot;,
-&quot;-t&quot;:                &quot;push timeout (in secounds)&quot;,
-&quot;-show-app-log&quot;:     &quot;tail and show application log during application start&quot;,
-&quot;-env&quot;:              &quot;add environment key value pairs dynamic; can specity multiple times&quot;,
-&quot;-var&quot;:              &quot;variable key value pair for variable substitution; can specify multiple times&quot;,
-&quot;-vars-file&quot;:        &quot;Path to a variable substitution file for manifest; can specify multiple times&quot;,
+<pre><code class="language-bash">-f                path to application manifest
+-p                path to application files
+-s                name of the stack to use
+-t                push timeout (in secounds)
+-show-app-log     tail and show application log during application start
+-env              add environment key value pairs dynamic; can specity multiple times
+-var              variable key value pair for variable substitution; can specify multiple times
+-vars-file        Path to a variable substitution file for manifest; can specify multiple times
 </code></pre>
 
 <h3 id="example">Example</h3>
 
 <pre><code>$ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
 </code></pre>
+
+<hr />
 
 <h1 id="version">Version</h1>
 
@@ -170,9 +172,13 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
 <p>Latest version: 0.0.12</p>
 
+<hr />
+
 <h1 id="changelog">Changelog</h1>
 
 <p>All changes and features of the upcoming release are complete documented at the <a href="https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md">Changelog</a>.</p>
+
+<hr />
 
 <h1 id="about">About</h1>
 
