@@ -125,15 +125,68 @@
     
 
 <p>Welcome to documentation of the CF-Puppeteer cf plugin.
-The plugin was active maintained an fixed some issues some older or other zero-downtime plugins had.
-So see all upcoming features or changes of each version see the github page.</p>
+The plugin was active maintained and fixed some issues from older versions of zero-downtime plugin.
+So see all upcoming features or changes read the <a href="https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md">Changelog</a> on github.</p>
 
 <h1 id="installation">Installation</h1>
 
+<h2 id="cf-community">CF-Community</h2>
+
+<pre><code>$ cf install-plugin -r CF-Community &quot;cf-puppeteer&quot;
+</code></pre>
+
+<h2 id="binary">Binary</h2>
+
+<pre><code>$ cf install-plugin path/to/downloaded/binary
+</code></pre>
+
 <h1 id="usage">Usage</h1>
 
-<pre><code>cf zero-downtime-push $appname
+<pre><code>$ cf zero-downtime-push [&lt;App-Name&gt;] -f &lt;Manifest.yml&gt; [options]
 </code></pre>
+
+<h2 id="options">Options</h2>
+
+<pre><code>&quot;-f&quot;:                &quot;path to application manifest&quot;,
+&quot;-p&quot;:                &quot;path to application files&quot;,
+&quot;-s&quot;:                &quot;name of the stack to use&quot;,
+&quot;-t&quot;:                &quot;push timeout (in secounds)&quot;,
+&quot;-show-app-log&quot;:     &quot;tail and show application log during application start&quot;,
+&quot;-env&quot;:              &quot;add environment key value pairs dynamic; can specity multiple times&quot;,
+&quot;-var&quot;:              &quot;variable key value pair for variable substitution; can specify multiple times&quot;,
+&quot;-vars-file&quot;:        &quot;Path to a variable substitution file for manifest; can specify multiple times&quot;,
+</code></pre>
+
+<h3 id="example">Example</h3>
+
+<pre><code>$ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
+</code></pre>
+
+<h1 id="version">Version</h1>
+
+<p>You can find all released versions on Github</p>
+
+<p><a href="https://github.com/HappyTobi/cf-puppeteer/releases">Overview versions</a></p>
+
+<p>Latest version: 0.0.12</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<p>All changes and features of the upcoming release are complete documented at the <a href="https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md">Changelog</a>.</p>
+
+<h1 id="about">About</h1>
+
+<h2 id="source">Source</h2>
+
+<p>The source code an be found on: <a href="https://github.com/HappyTobi/cf-puppeteer/">Github</a></p>
+
+<h2 id="issues">Issues</h2>
+
+<p>If there are any issue or bug pleas open an a <a href="https://github.com/HappyTobi/cf-puppeteer/issues">Issue on Github</a></p>
+
+<h2 id="like">Like</h2>
+
+<p>If you like the plugin, don&rsquo;t forget to give it a ★ <a href="https://github.com/HappyTobi/cf-puppeteer/">star</a> on github</p>
 
   </article>
   
