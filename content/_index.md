@@ -6,7 +6,7 @@ description: "The Zero-downtime plugin for you cf cli."
 
 Welcome to documentation of the CF-Puppeteer cf plugin.
 The plugin was active maintained and fixed some issues from older versions of zero-downtime plugin.
-So see all upcoming features or changes read the [Cahngelog](https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md) on github.
+So see all upcoming features or changes read the [Changelog](https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md) on github.
 
 
 # Installation
@@ -43,6 +43,18 @@ $ cf zero-downtime-push [<App-Name>] -f <Manifest.yml> [options]
 ```
 $ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
 ```
+
+# Version
+You can find all released versions on Github
+
+[Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
+
+Latest version: 0.0.12
+
+# Changelog
+All changes and features of the upcoming release are complete documented at the [Changelog](https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md).
+
+# About
 
 ## Source
 The source code an be found on: [Github](https://github.com/HappyTobi/cf-puppeteer/)
