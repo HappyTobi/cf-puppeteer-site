@@ -28,21 +28,23 @@ $ cf zero-downtime-push [<App-Name>] -f <Manifest.yml> [options]
 ```
 
 ## Options
-```
-"-f":                "path to application manifest",
-"-p":                "path to application files",
-"-s":                "name of the stack to use",
-"-t":                "push timeout (in secounds)",
-"-show-app-log":     "tail and show application log during application start",
-"-env":              "add environment key value pairs dynamic; can specity multiple times",
-"-var":              "variable key value pair for variable substitution; can specify multiple times",
-"-vars-file":        "Path to a variable substitution file for manifest; can specify multiple times",
+```bash
+-f                path to application manifest
+-p                path to application files
+-s                name of the stack to use
+-t                push timeout (in secounds)
+-show-app-log     tail and show application log during application start
+-env              add environment key value pairs dynamic; can specity multiple times
+-var              variable key value pair for variable substitution; can specify multiple times
+-vars-file        Path to a variable substitution file for manifest; can specify multiple times
 ```
 
 ### Example
 ```
 $ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
 ```
+
+--- 
 
 # Version
 You can find all released versions on Github
@@ -51,8 +53,12 @@ You can find all released versions on Github
 
 Latest version: 0.0.12
 
+--- 
+
 # Changelog
 All changes and features of the upcoming release are complete documented at the [Changelog](https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md).
+
+---
 
 # About
 
