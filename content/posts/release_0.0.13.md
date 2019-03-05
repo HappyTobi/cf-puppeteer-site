@@ -1,7 +1,7 @@
 ---
 date: 2019-03-04
 description: "New CF-Release"
-featured_image: 'images/background.jpg'
+featured_image: 'images/cf-puppeteer-0.0.13.jpg'
 tags: ["release"]
 title: "Teaser Version 0.0.13"
 ---
