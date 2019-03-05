@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CF-Puppeteer: zero-downtime plugin on CF-Puppeteer</title>
-    <link>https://cf-puppeteer.happytobi.com/</link>
-    <description>Recent content in CF-Puppeteer: zero-downtime plugin on CF-Puppeteer</description>
+    <title>News on CF-Puppeteer</title>
+    <link>https://cf-puppeteer.happytobi.com/posts/</link>
+    <description>Recent content in News on CF-Puppeteer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
     <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cf-puppeteer.happytobi.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cf-puppeteer.happytobi.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -42,16 +42,6 @@ Changelog Added  add -env argument to pass environment variables  Changed  Chang
       <guid>https://cf-puppeteer.happytobi.com/posts/release_0.0.11/</guid>
       <description>New new release verion of cf-puppeteer was just a rename because a naming confict of cf-plugins Issue
 Download: Github</description>
-    </item>
-    
-    <item>
-      <title>Licenses</title>
-      <link>https://cf-puppeteer.happytobi.com/licenses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cf-puppeteer.happytobi.com/licenses/</guid>
-      <description>Image The original Ptoho image was taken from pixpoetry on Unsplash
-Source-Code In the past CF-Puppeteer was a fork from autopilot plugin The CF-Puppeteer code was privded under the Apache License 2.0</description>
     </item>
     
   </channel>

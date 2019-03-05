@@ -3,3 +3,7 @@
 #TableOfContents ul li {
   margin-bottom: 1em;
 }
+
+.measure-wide {
+  width: 50em;
+}

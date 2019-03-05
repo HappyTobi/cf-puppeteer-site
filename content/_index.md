@@ -29,14 +29,19 @@ $ cf zero-downtime-push [<App-Name>] -f <Manifest.yml> [options]
 
 ## Options
 ```bash
--f                path to application manifest
--p                path to application files
--s                name of the stack to use
--t                push timeout (in secounds)
--show-app-log     tail and show application log during application start
--env              add environment key value pairs dynamic; can specity multiple times
--var              variable key value pair for variable substitution; can specify multiple times
--vars-file        Path to a variable substitution file for manifest; can specify multiple times
+-f                              path to application manifest
+-p                              path to application files
+-s                              name of the stack to use
+-t                              push timeout (in secounds)
+-show-app-log                   tail and show application log during application start
+-env                            add environment key value pairs dynamic; can specity multiple times
+-var                            variable key value pair for variable substitution; can specify multiple times
+-vars-file                      path to a variable substitution file for manifest; can specify multiple times
+--vendor-option                 option to delete or stop vendor application - default is delete,
+--health-check-type             type of health check to perform,
+--health-check-http-endpoint    endpoint for the 'http' health check type,
+--invocation-timeout            timeout (in seconds) that controls individual health check invocations,
+--process                       application process to update,
 ```
 
 ### Example
@@ -72,3 +77,7 @@ If there are any issue or bug pleas open an a [Issue on Github](https://github.c
 
 ## Like
 If you like the plugin, don't forget to give it a ★ [star](https://github.com/HappyTobi/cf-puppeteer/) on github
+
+## Contributors
+Special thanks to all contributors
+- [Skyfalke](https://github.com/skyfalke)

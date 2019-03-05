@@ -1,0 +1,7 @@
+.measure-wide {
+    width: 50em;
+}
+
+.measure-wide {
+    max-width: 50em;
+}
