@@ -13,14 +13,14 @@
     
     
     <item>
-      <title>Teaser Version 0.0.13</title>
+      <title>Version 0.0.13</title>
       <link>https://cf-puppeteer.happytobi.com/posts/release_0.0.13/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://cf-puppeteer.happytobi.com/posts/release_0.0.13/</guid>
       <description>Release 0.0.13 was a big feature and bugfix release. With the new release we will start with focus to bring the first Verion 1.0.0 to our customers.
 With the release we changed following things
-Changelog Added  add -vendor-option to stop old service instead of deletion add &amp;ndash;health-check v3 command to specify a invocationtime for health checks  Changed  cleanup manifest parser update documentation  Fixed  env arg issue when passing key value pairs  Specials Special thanks to the first contributor to cf-puppeteer plugin Skyfalke</description>
+Changelog Added  add -vendor-option to stop old service instead of deletion add &amp;ndash;health-check v3 command to specify a invocationtime for health checks  Changed  cleanup manifest parser update documentation  Fixed  env arg issue when passing key value pairs argument handling  Specials Special thanks to the first contributor to cf-puppeteer plugin Skyfalke</description>
     </item>
     
     <item>
