@@ -56,7 +56,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 0.0.12
+Latest version: 0.0.13
 
 --- 
 

@@ -3,7 +3,7 @@ date: 2019-03-04
 description: "New CF-Release"
 featured_image: 'images/cf-puppeteer-0.0.13.jpg'
 tags: ["release"]
-title: "Teaser Version 0.0.13"
+title: "Version 0.0.13"
 ---
 
 Release 0.0.13 was a big feature and bugfix release. 
@@ -24,7 +24,7 @@ With the release we changed following things
 
 ##### Fixed
 - env arg issue when passing key value pairs
-
+- argument handling
 
 
 #### Specials 
