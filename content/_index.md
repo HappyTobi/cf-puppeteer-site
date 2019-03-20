@@ -49,6 +49,12 @@ $ cf zero-downtime-push [<App-Name>] -f <Manifest.yml> [options]
 $ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
 ```
 
+## Tracing
+To show more informations while running the plugin you have to set the environment variable CF_PUPPETEER_TRACE to true
+```
+export CF_PUPPETEER_TRACE=true
+```
+
 --- 
 
 # Version
@@ -56,7 +62,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 0.0.13
+Latest version: 0.0.14
 
 --- 
 

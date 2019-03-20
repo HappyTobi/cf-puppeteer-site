@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wip on CF-Puppeteer</title>
+    <link>https://cf-puppeteer.happytobi.com/tags/wip/</link>
+    <description>Recent content in Wip on CF-Puppeteer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>HappyTobi / Tobias Schug</copyright>
+    <lastBuildDate>Wed, 20 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cf-puppeteer.happytobi.com/tags/wip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Version 1.0.0</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</guid>
+      <description>We still work hard to bring the fist static release of CF-Puppeteer.
+Download:</description>
+    </item>
+    
+  </channel>
+</rss>

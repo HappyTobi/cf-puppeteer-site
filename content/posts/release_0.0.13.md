@@ -1,5 +1,5 @@
 ---
-date: 2019-03-04
+date: 2019-03-08
 description: "New CF-Release"
 featured_image: 'images/cf-puppeteer-0.0.13.jpg'
 tags: ["release"]
@@ -34,5 +34,5 @@ Special thanks to the first contributor to cf-puppeteer plugin
 
 ---
 
-~~Download~~:
-
+Download:
+[Github](https://github.com/HappyTobi/cf-puppeteer/releases/tag/0.0.13)
