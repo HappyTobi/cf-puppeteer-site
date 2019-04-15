@@ -1,7 +1,7 @@
 ---
 title: "CF-Puppeteer: zero-downtime plugin"
 featured_image: 'images/background.jpg'
-description: "The Zero-downtime plugin for you cf cli."
+description: "The Zero-downtime plugin for your cf cli."
 ---
 
 Welcome to documentation of the CF-Puppeteer cf plugin.
