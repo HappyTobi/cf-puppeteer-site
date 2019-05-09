@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.0.0-rc.0</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.0.0-rc0/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.0.0-rc0/</guid>
+      <description>Release 1.0.0-rc.0 - First release candiate
+With the first rc we dont bring &amp;ldquo;new&amp;rdquo; features!, we just bring the deployment on the newest level of cf api&amp;rsquo;s. The new version now supports the newest structure of cf-manifests.yml files. The plugin is also a &amp;ldquo;complete&amp;rdquo; rewrite of the older versions.
+For the new rc versions we will focus on bringing docker support, adding more tests and clean / simplify the plugin implementation</description>
+    </item>
     
     <item>
       <title>Version 0.0.14</title>
