@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.0.0</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</guid>
+      <description>Release 1.0.0 - Final release is here
+With the first final release we bring the version 1.0.0. to cf-puppeteer. We bring some small feature, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
+Right now it&amp;rsquo;s possible to choose (manually / automatic) between a v2 or v3 push of your application. CF-Puppeteer check the cf-controller version and use the v3 push if it&amp;rsquo;s possible. To use the old push manually you can pass the option: --legacy-push</description>
+    </item>
     
     <item>
       <title>Version 1.0.0-rc.0</title>

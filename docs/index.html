@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.6" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/" />
 
-<meta property="og:updated_time" content="2019-05-05T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-06-18T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="CF-Puppeteer: zero-downtime plugin">
 <meta itemprop="description" content="The Zero-downtime plugin for your cf cli.">
@@ -93,7 +93,7 @@
 
 
 
-<a href="https://www.linkedin.com/in/tobias-schug" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+<a href="https://www.linkedin.com/in/tobias-schug-9813b36b" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
   <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
@@ -166,15 +166,14 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 -p                              path to application files
 -s                              name of the stack to use
 -t                              push timeout (in secounds)
--show-app-log                   tail and show application log during application start
 -env                            add environment key value pairs dynamic; can specity multiple times
--var                            variable key value pair for variable substitution; can specify multiple times
--vars-file                      path to a variable substitution file for manifest; can specify multiple times
 --vendor-option                 option to delete or stop vendor application - default is delete,
 --health-check-type             type of health check to perform,
 --health-check-http-endpoint    endpoint for the 'http' health check type,
 --invocation-timeout            timeout (in seconds) that controls individual health check invocations,
 --process                       application process to update,
+--legacy-push                   use legacy push instead of new v3 api
+--show-crash-log                show recent logs when applications crashes while the deployment
 </code></pre>
 
 <h3 id="example">Example</h3>
@@ -197,7 +196,7 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
 <p><a href="https://github.com/HappyTobi/cf-puppeteer/releases">Overview versions</a></p>
 
-<p>Latest version: 0.0.14</p>
+<p>Latest version: 1.0.0</p>
 
 <hr />
 
@@ -224,7 +223,8 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 <h2 id="contributors">Contributors</h2>
 
 <p>Special thanks to all contributors
-- <a href="https://github.com/skyfalke">Skyfalke</a></p>
+- <a href="https://github.com/skyfalke">Skyfalke</a>
+- <a href="https://github.com/devorbitus">devorbitus</a></p>
 
   </article>
   
@@ -249,6 +249,40 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
       <section class="w-100 mw8">
         
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/posts/release_1.0.0/" class="db grow">
+            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-1.0.0.jpg" class="img" alt="image from Version 1.0.0">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/release_1.0.0/" class="color-inherit dim link">
+            Version 1.0.0
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Release 1.0.0 - Final release is here
+With the first final release we bring the version 1.0.0. to cf-puppeteer. We bring some small feature, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
+Right now it&rsquo;s possible to choose (manually / automatic) between a v2 or v3 push of your application. CF-Puppeteer check the cf-controller version and use the v3 push if it&rsquo;s possible. To use the old push manually you can pass the option: --legacy-push
+        </div>
+          <a href="/posts/release_1.0.0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
         
           <div class="relative w-100 mb4">
             
@@ -351,46 +385,18 @@ Changelog Added  add -vendor-option to stop old service instead of deletion add 
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/posts/release_0.0.12/" class="db grow">
-            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-0.0.12.jpg" class="img" alt="image from Release Version 0.0.12">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/release_0.0.12/" class="color-inherit dim link">
-            Release Version 0.0.12
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Release 0.0.12 was a feature and bugfix release.
-With the release we changed following things
-Changelog Added  add -env argument to pass environment variables  Changed  Change buildscript to generate sha1 sums for each file  Fixed  timeout issue with specified timout at manifest (before -t worked only) documentation  Download: Github
-        </div>
-          <a href="/posts/release_0.0.12/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/release_0.0.12/" class="link black dim">
+              Release Version 0.0.12
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/release_0.0.11/" class="link black dim">
@@ -438,7 +444,7 @@ Changelog Added  add -env argument to pass environment variables  Changed  Chang
 
 
 
-<a href="https://www.linkedin.com/in/tobias-schug" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+<a href="https://www.linkedin.com/in/tobias-schug-9813b36b" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
   <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>

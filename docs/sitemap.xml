@@ -3,6 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cf-puppeteer.happytobi.com/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cf-puppeteer.happytobi.com/posts/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cf-puppeteer.happytobi.com/tags/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cf-puppeteer.happytobi.com/tags/release/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cf-puppeteer.happytobi.com/posts/release_1.0.0-rc0/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,15 +71,7 @@
   </url>
   
   <url>
-    <loc>https://cf-puppeteer.happytobi.com/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cf-puppeteer.happytobi.com/categories/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
@@ -54,27 +79,6 @@
     <loc>https://cf-puppeteer.happytobi.com/licenses/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cf-puppeteer.happytobi.com/posts/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cf-puppeteer.happytobi.com/tags/release/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cf-puppeteer.happytobi.com/tags/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
   </url>
   
 </urlset>
