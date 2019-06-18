@@ -56,5 +56,16 @@ Please give some feedback and open issues if you find some. [github-issue tracke
 
 ---
 
+## Specials
+
+### Tester 👩‍💻👨‍💻
+
+Special thanks for testing on different environments and giving some good feedback
+[Skyfalke](https://github.com/skyfalke)
+[Seinol](https://github.com/seinol)
+
+
+---
+
 Download:
 [Github](https://github.com/HappyTobi/cf-puppeteer/releases/tag/1.0.0)
