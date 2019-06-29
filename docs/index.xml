@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.1.0</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.1.0/</link>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.0/</guid>
+      <description>Release 1.1.0
+With the release of cf-puppeteer with version 1.1.0 we bring some new features and bugfixes of version 1.0.0.
+To give you a overview all new fetures and bugfixes are listed below.
+The moste important once are
+--no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
+cf zero-downtime-push -f ./manifest.yml --no-start --vendor-option none  right now you can add new services or what ever you want.</description>
+    </item>
     
     <item>
       <title>Version 1.0.0</title>
@@ -82,7 +96,7 @@ Download: Github</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cf-puppeteer.happytobi.com/licenses/</guid>
-      <description>Images here you can find all used images from the website - Unsplash - Puppeteer - pixpoetry - Unsplash - Release 0.0.11 - Ankush Minda - Unsplash - Release 0.0.12 - Daniel Hjalmarsson - Unsplash - Release 0.0.13 - Glenn Carstens-Peters - Unsplash - Release 1.0.0 - Pietro Rampazzo
+      <description>Images here you can find all used images from the website - Unsplash - Puppeteer - pixpoetry - Unsplash - Release 0.0.11 - Ankush Minda - Unsplash - Release 0.0.12 - Daniel Hjalmarsson - Unsplash - Release 0.0.13 - Glenn Carstens-Peters - Unsplash - Release 1.0.0 - Pietro Rampazzo - Unsplash - Release 1.1.0 - Samuel Zeller
 Source-Code In the past CF-Puppeteer was a fork from autopilot plugin The CF-Puppeteer code was privded under the Apache License 2.</description>
     </item>
     

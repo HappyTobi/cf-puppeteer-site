@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/" />
 
-<meta property="og:updated_time" content="2019-06-18T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-06-29T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="CF-Puppeteer: zero-downtime plugin">
 <meta itemprop="description" content="The Zero-downtime plugin for your cf cli.">
@@ -162,23 +162,46 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
 <h2 id="options">Options</h2>
 
+<p>The options you can use depends on v3 or legacy push</p>
+
+<h3 id="v3-push-without-legacy-push">V3 Push (without &ndash;legacy-push)</h3>
+
 <pre><code class="language-bash">-f                              path to application manifest
 -p                              path to application files
 -s                              name of the stack to use
 -t                              push timeout (in secounds)
--env                            add environment key value pairs dynamic; can specity multiple times
+--env                            add environment key value pairs dynamic; can specity multiple times
 --vendor-option                 option to delete or stop vendor application - default is delete,
 --health-check-type             type of health check to perform,
 --health-check-http-endpoint    endpoint for the 'http' health check type,
 --invocation-timeout            timeout (in seconds) that controls individual health check invocations,
 --process                       application process to update,
+--show-crash-log                show recent logs when applications crashes while the deployment
+--no-route                       deploy new application without adding routes
+--route-only                     only add routes from manifest to application
+--no-start                      don't start application after deployment
+</code></pre>
+
+<h3 id="legacy-push-legacy-push-arg">Legacy-push (&ndash;legacy-push arg)</h3>
+
+<pre><code class="language-bash">-f                              path to application manifest
+-p                              path to application files
+-s                              name of the stack to use
+-t                              push timeout (in secounds)
+--env                            add environment key value pairs dynamic; can specity multiple times
 --legacy-push                   use legacy push instead of new v3 api
 --show-crash-log                show recent logs when applications crashes while the deployment
+--no-start                      don't start application after deployment
 </code></pre>
 
 <h3 id="example">Example</h3>
 
-<pre><code>$ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
+<pre><code>$ cf zero-downtime-push -f manifest.yml --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
+</code></pre>
+
+<h3 id="legacy-push-example">Legacy push Example</h3>
+
+<pre><code>$ cf zero-downtime-push -f manifest.yml --legacy-push --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
 </code></pre>
 
 <h2 id="tracing">Tracing</h2>
@@ -186,6 +209,11 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 <p>To show more informations while running the plugin you have to set the environment variable CF_PUPPETEER_TRACE to true</p>
 
 <pre><code>export CF_PUPPETEER_TRACE=true
+</code></pre>
+
+<p>If you&rsquo;re using a UNIX System you can also combine it with CF_TRACE</p>
+
+<pre><code>CF_TRACE=/dev/stdout cf zero-downtime-push ...
 </code></pre>
 
 <hr />
@@ -196,7 +224,7 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
 <p><a href="https://github.com/HappyTobi/cf-puppeteer/releases">Overview versions</a></p>
 
-<p>Latest version: 1.0.0</p>
+<p>Latest version: 1.1.0</p>
 
 <hr />
 
@@ -249,6 +277,43 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
 
       <section class="w-100 mw8">
         
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/posts/release_1.1.0/" class="db grow">
+            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-1.1.0.jpg" class="img" alt="image from Version 1.1.0">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/release_1.1.0/" class="color-inherit dim link">
+            Version 1.1.0
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Release 1.1.0
+With the release of cf-puppeteer with version 1.1.0 we bring some new features and bugfixes of version 1.0.0.
+To give you a overview all new fetures and bugfixes are listed below.
+The moste important once are
+--no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
+cf zero-downtime-push -f ./manifest.yml --no-start --vendor-option none  right now you can add new services or what ever you want.
+        </div>
+          <a href="/posts/release_1.1.0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
         
           <div class="relative w-100 mb4">
             
@@ -351,46 +416,18 @@ Changelog Added  health check settings (v3): fallback on app manifest for health
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/posts/release_0.0.13/" class="db grow">
-            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-0.0.13.jpg" class="img" alt="image from Version 0.0.13">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/release_0.0.13/" class="color-inherit dim link">
-            Version 0.0.13
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Release 0.0.13 was a big feature and bugfix release. With the new release we will start with focus to bring the first Verion 1.0.0 to our customers.
-With the release we changed following things
-Changelog Added  add -vendor-option to stop old service instead of deletion add &ndash;health-check v3 command to specify a invocationtime for health checks  Changed  cleanup manifest parser update documentation  Fixed  env arg issue when passing key value pairs argument handling  Specials Special thanks to the first contributor to cf-puppeteer plugin Skyfalke
-        </div>
-          <a href="/posts/release_0.0.13/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/release_0.0.13/" class="link black dim">
+              Version 0.0.13
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/release_0.0.12/" class="link black dim">
