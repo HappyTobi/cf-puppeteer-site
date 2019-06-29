@@ -28,30 +28,58 @@ $ cf zero-downtime-push [<App-Name>] -f <Manifest.yml> [options]
 ```
 
 ## Options
+The options you can use depends on v3 or legacy push
+
+### V3 Push (without --legacy-push)
 ```bash
 -f                              path to application manifest
 -p                              path to application files
 -s                              name of the stack to use
 -t                              push timeout (in secounds)
--env                            add environment key value pairs dynamic; can specity multiple times
+--env                            add environment key value pairs dynamic; can specity multiple times
 --vendor-option                 option to delete or stop vendor application - default is delete,
 --health-check-type             type of health check to perform,
 --health-check-http-endpoint    endpoint for the 'http' health check type,
 --invocation-timeout            timeout (in seconds) that controls individual health check invocations,
 --process                       application process to update,
+--show-crash-log                show recent logs when applications crashes while the deployment
+--no-route                       deploy new application without adding routes
+--route-only                     only add routes from manifest to application
+--no-start                      don't start application after deployment
+```
+
+### Legacy-push (--legacy-push arg)
+```bash
+-f                              path to application manifest
+-p                              path to application files
+-s                              name of the stack to use
+-t                              push timeout (in secounds)
+--env                            add environment key value pairs dynamic; can specity multiple times
 --legacy-push                   use legacy push instead of new v3 api
 --show-crash-log                show recent logs when applications crashes while the deployment
+--no-start                      don't start application after deployment
 ```
 
 ### Example
+
 ```
-$ cf zero-downtime-push -f manifest.yml -env DB_PORT=3306 -env DB_VENDOR=MYSQL -t 120 -show-app-log
+$ cf zero-downtime-push -f manifest.yml --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
+```
+
+### Legacy push Example
+
+```
+$ cf zero-downtime-push -f manifest.yml --legacy-push --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
 ```
 
 ## Tracing
 To show more informations while running the plugin you have to set the environment variable CF_PUPPETEER_TRACE to true
 ```
 export CF_PUPPETEER_TRACE=true
+```
+If you're using a UNIX System you can also combine it with CF_TRACE
+```
+CF_TRACE=/dev/stdout cf zero-downtime-push ...
 ```
 
 --- 
@@ -61,7 +89,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 1.0.0
+Latest version: 1.1.0
 
 --- 
 
