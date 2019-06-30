@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/tags/release/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.1.1</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.1.1/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.1/</guid>
+      <description>Release 1.1.1
+With the release of cf-puppeteer with version 1.1.1 we worked in some feedback and make the usability more easy and clear
+To give you a overview all new fetures and bugfixes are listed below.
+The moste important once are
+--no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )</description>
+    </item>
     
     <item>
       <title>Version 1.1.0</title>
@@ -23,7 +36,7 @@ With the release of cf-puppeteer with version 1.1.0 we bring some new features a
 To give you a overview all new fetures and bugfixes are listed below.
 The moste important once are
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-start --vendor-option none  right now you can add new services or what ever you want.</description>
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want.</description>
     </item>
     
     <item>
