@@ -36,15 +36,15 @@ The options you can use depends on v3 or legacy push
 -p                              path to application files
 -s                              name of the stack to use
 -t                              push timeout (in secounds)
---env                            add environment key value pairs dynamic; can specity multiple times
---vendor-option                 option to delete or stop vendor application - default is delete,
+--env                           add environment key value pairs dynamic; can specity multiple times
+--venerable-action              option to delete or stop vendor application - default is delete,
 --health-check-type             type of health check to perform,
 --health-check-http-endpoint    endpoint for the 'http' health check type,
 --invocation-timeout            timeout (in seconds) that controls individual health check invocations,
 --process                       application process to update,
 --show-crash-log                show recent logs when applications crashes while the deployment
---no-route                       deploy new application without adding routes
---route-only                     only add routes from manifest to application
+--no-route                      deploy new application without adding routes
+--route-only                    only add routes from manifest to application
 --no-start                      don't start application after deployment
 ```
 
@@ -89,7 +89,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 1.1.0
+Latest version: 1.1.1
 
 --- 
 
