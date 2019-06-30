@@ -26,7 +26,7 @@ The moste important once are
 Deploy the application without route switching - old application should still run and new one should be stoped after deployment
 
 ```bash
-cf zero-downtime-push -f ./manifest.yml --no-start --vendor-option none
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none
 ```
 
 right now you can add new services or what ever you want.
