@@ -8,11 +8,11 @@ title: "Version 1.0.0"
 
 Release 1.0.0 - Final release is here
 
-With the first final release we bring the version 1.0.0. to cf-puppeteer.
-We bring some small feature, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
+With the first final release we bring the version 1.0.0 to cf-puppeteer.
+We bring some small features, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
 
-Right now it's possible to choose (manually / automatic) between a v2 or v3 push of your application.
-CF-Puppeteer check the cf-controller version and use the v3 push if it's possible.
+Right now it's possible to choose between an v2 or v3 cf push of your application.
+CF-Puppeteer checks the cf-controller version and use the v3 push if it's possible.
 To use the old push manually you can pass the option: ```--legacy-push```
 
 The new version now supports the newest structure of [cf-manifests.yml](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest-attributes.html) files 

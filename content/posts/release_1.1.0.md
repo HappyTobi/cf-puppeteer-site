@@ -8,11 +8,10 @@ title: "Version 1.1.0"
 
 Release 1.1.0
 
-With the release of cf-puppeteer with version 1.1.0 we bring some new features and bugfixes of version 1.0.0.
+With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
 
-To give you a overview all new fetures and bugfixes are listed below.
+The new features and bugfixes are listed below.
 
-The moste important once are
 ```bash
 --no-route
 --route-only

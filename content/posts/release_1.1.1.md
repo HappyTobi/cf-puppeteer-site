@@ -8,11 +8,10 @@ title: "Version 1.1.1"
 
 Release 1.1.1
 
-With the release of cf-puppeteer with version 1.1.1 we worked in some feedback and make the usability more easy and clear
+With the release of cf-puppeteer with version 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
 
-To give you a overview all new fetures and bugfixes are listed below.
+All new features and bugfixes are listed below.
 
-The moste important once are
 ```bash
 --no-route
 --venerable-action
