@@ -4,6 +4,16 @@
   margin-bottom: 1em;
 }
 
+.lh-copy blockquote {
+  display: block;
+  font-size: .875em;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+}
+
 .measure-wide {
   width: 50em;
 }
