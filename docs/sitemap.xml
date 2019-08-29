@@ -17,9 +17,17 @@
   </url>
   
   <url>
+    <loc>https://cf-puppeteer.happytobi.com/tags/release/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cf-puppeteer.happytobi.com/tags/</loc>
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -27,12 +35,6 @@
     <lastmod>2019-06-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cf-puppeteer.happytobi.com/tags/release/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -86,7 +88,8 @@
   
   <url>
     <loc>https://cf-puppeteer.happytobi.com/categories/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

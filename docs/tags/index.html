@@ -6,15 +6,15 @@
     
     <title>CF-Puppeteer </title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.159086db2620e59034901ad810f6db74.css" rel="stylesheet">
     
 
     
@@ -35,8 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/tags/" />
 
-<meta property="og:updated_time" content="2019-06-30T00:00:00&#43;00:00"/>
-
+<meta property="og:updated_time" content="2019-06-30T00:00:00+00:00" />
 <meta itemprop="name" content="Tags">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
 
@@ -44,9 +43,11 @@
 <meta name="twitter:title" content="Tags"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
+      
+    
   </head>
 
-  <body class="ma0 avenir bg-near-white">
+  <body class="ma0 avenir bg-near-white production">
 
     
 
@@ -154,10 +155,10 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Release 1.1.1
-With the release of cf-puppeteer with version 1.1.1 we worked in some feedback and make the usability more easy and clear
-To give you a overview all new fetures and bugfixes are listed below.
-The moste important once are
+With the release of cf-puppeteer with version 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
+All new features and bugfixes are listed below.
 --no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
+cf zero-downtime-push -f .
     </div>
   </div>
 </div>
@@ -173,11 +174,10 @@ The moste important once are
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Release 1.1.0
-With the release of cf-puppeteer with version 1.1.0 we bring some new features and bugfixes of version 1.0.0.
-To give you a overview all new fetures and bugfixes are listed below.
-The moste important once are
+With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
+The new features and bugfixes are listed below.
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want.
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
     </div>
   </div>
 </div>
@@ -193,8 +193,8 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Release 1.0.0 - Final release is here
-With the first final release we bring the version 1.0.0. to cf-puppeteer. We bring some small feature, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
-Right now it&rsquo;s possible to choose (manually / automatic) between a v2 or v3 push of your application. CF-Puppeteer check the cf-controller version and use the v3 push if it&rsquo;s possible. To use the old push manually you can pass the option: --legacy-push
+With the first final release we bring the version 1.0.0 to cf-puppeteer. We bring some small features, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
+Right now it&rsquo;s possible to choose between an v2 or v3 cf push of your application. CF-Puppeteer checks the cf-controller version and use the v3 push if it&rsquo;s possible. To use the old push manually you can pass the option: --legacy-push
     </div>
   </div>
 </div>

@@ -19,10 +19,10 @@
       
       <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.1/</guid>
       <description>Release 1.1.1
-With the release of cf-puppeteer with version 1.1.1 we worked in some feedback and make the usability more easy and clear
-To give you a overview all new fetures and bugfixes are listed below.
-The moste important once are
---no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )</description>
+With the release of cf-puppeteer with version 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
+All new features and bugfixes are listed below.
+--no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
+cf zero-downtime-push -f .</description>
     </item>
     
     <item>
@@ -32,11 +32,10 @@ The moste important once are
       
       <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.0/</guid>
       <description>Release 1.1.0
-With the release of cf-puppeteer with version 1.1.0 we bring some new features and bugfixes of version 1.0.0.
-To give you a overview all new fetures and bugfixes are listed below.
-The moste important once are
+With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
+The new features and bugfixes are listed below.
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want.</description>
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:</description>
     </item>
     
     <item>
@@ -46,8 +45,8 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
       
       <guid>https://cf-puppeteer.happytobi.com/posts/release_1.0.0/</guid>
       <description>Release 1.0.0 - Final release is here
-With the first final release we bring the version 1.0.0. to cf-puppeteer. We bring some small feature, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
-Right now it&amp;rsquo;s possible to choose (manually / automatic) between a v2 or v3 push of your application. CF-Puppeteer check the cf-controller version and use the v3 push if it&amp;rsquo;s possible. To use the old push manually you can pass the option: --legacy-push</description>
+With the first final release we bring the version 1.0.0 to cf-puppeteer. We bring some small features, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
+Right now it&amp;rsquo;s possible to choose between an v2 or v3 cf push of your application. CF-Puppeteer checks the cf-controller version and use the v3 push if it&amp;rsquo;s possible. To use the old push manually you can pass the option: --legacy-push</description>
     </item>
     
     <item>
