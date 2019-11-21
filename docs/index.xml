@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CF-Puppeteer: zero-downtime plugin on CF-Puppeteer</title>
@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.1.2</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.1.2/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.2/</guid>
+      <description>Release 1.1.2
+Information is comming soon. Please read the changelog till the new blog post was released.
+Download: Github</description>
+    </item>
     
     <item>
       <title>Version 1.1.1</title>
@@ -108,8 +119,7 @@ Download: Github</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cf-puppeteer.happytobi.com/licenses/</guid>
-      <description>Images here you can find all used images from the website - Unsplash - Puppeteer - pixpoetry - Unsplash - Release 0.0.11 - Ankush Minda - Unsplash - Release 0.0.12 - Daniel Hjalmarsson - Unsplash - Release 0.0.13 - Glenn Carstens-Peters - Unsplash - Release 1.0.0 - Pietro Rampazzo - Unsplash - Release 1.1.0 - Samuel Zeller - Unsplash - Release 1.1.1 - eberhard grossgasteiger
-Source-Code In the past CF-Puppeteer was a fork from autopilot plugin The CF-Puppeteer code was privded under the Apache License 2.</description>
+      <description>Images here you can find all used images from the website - Unsplash - Puppeteer - pixpoetry - Unsplash - Release 0.0.11 - Ankush Minda - Unsplash - Release 0.0.12 - Daniel Hjalmarsson - Unsplash - Release 0.0.13 - Glenn Carstens-Peters - Unsplash - Release 1.0.0 - Pietro Rampazzo - Unsplash - Release 1.1.0 - Samuel Zeller - Unsplash - Release 1.1.1 - eberhard grossgasteiger - Unsplash - Release 1.</description>
     </item>
     
   </channel>
