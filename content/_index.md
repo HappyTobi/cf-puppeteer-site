@@ -44,8 +44,10 @@ The options you can use depends on v3 or legacy push
 --process                       application process to update,
 --show-crash-log                show recent logs when applications crashes while the deployment
 --no-route                      deploy new application without adding routes
---route-only                    only add routes from manifest to application
+--route-only                    add routes from manifest to application only
 --no-start                      don't start application after deployment
+--docker-image                  docker image url                                                           (⭐️New since 1.1.2)
+--docker-username               docker repository username; used with password from env CF_DOCKER_PASSWORD (⭐️New since 1.1.2)
 ```
 
 ### Legacy-push (--legacy-push arg)
@@ -58,6 +60,8 @@ The options you can use depends on v3 or legacy push
 --legacy-push                   use legacy push instead of new v3 api
 --show-crash-log                show recent logs when applications crashes while the deployment
 --no-start                      don't start application after deployment
+--no-route                      deploy new application without adding routes (⭐️New since 1.1.2)
+--route-only                    add routes from manifest to application only (⭐️New since 1.1.2)
 ```
 
 ### Example
@@ -89,7 +93,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 1.1.1
+Latest version: 1.1.2
 
 --- 
 
