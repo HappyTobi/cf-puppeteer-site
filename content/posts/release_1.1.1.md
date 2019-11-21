@@ -54,6 +54,6 @@ Please give some feedback and open a issues if you find one. [github-issue track
 ---
 
 Download:
-[Github](https://github.com/HappyTobi/cf-puppeteer/releases/tag/1.1.0)
+[Github](https://github.com/HappyTobi/cf-puppeteer/releases/tag/1.1.1)
 
 
