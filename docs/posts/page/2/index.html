@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/posts/" />
 
-<meta property="og:updated_time" content="2019-11-21T00:00:00+00:00" />
+<meta property="og:updated_time" content="2019-11-26T00:00:00+00:00" />
 <meta itemprop="name" content="News">
 <meta itemprop="description" content="Release posts about zero-downtime plugin.">
 
@@ -143,6 +143,25 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/release_1.1.0/" class="link black dim">
+        Version 1.1.0
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Release 1.1.0
+With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
+The new features and bugfixes are listed below.
+--no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/release_1.0.0/" class="link black dim">
         Version 1.0.0
       </a>
@@ -168,22 +187,6 @@ Right now it&rsquo;s possible to choose between an v2 or v3 cf push of your appl
       Release 1.0.0-rc.0 - First release candiate
 With the first rc we dont bring &ldquo;new&rdquo; features!, we just pushed the deployment on the newest level of cf api&rsquo;s. The new version now supports the newest structure of cf-manifests.yml files. The plugin is also a &ldquo;complete&rdquo; rewrite of the older versions.
 For the new rc versions we will focus on bringing docker support, adding more tests and clean / simplify the plugin implementation.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/release_0.0.14/" class="link black dim">
-        Version 0.0.14
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Release 0.0.14 brings just small bug fixes and one new feature
-Changelog Added  health check settings (v3): fallback on app manifest for health-check-type and health-check-http-endpoint settings print more information on Cloud Foundry API calls (if env CF_PUPPETEER_TRACE = true)  Fixed  health check settings (v3): support for applications with empty command go linting issues  Changed  improve documentation  Specials Special thanks to the first contributor to cf-puppeteer plugin Skyfalke
     </div>
   </div>
 </div>
@@ -236,12 +239,23 @@ Changelog Added  health check settings (v3): fallback on app manifest for health
     <li class="page-item"><a class="page-link" href="/posts/page/3/">3</a></li>
     
     
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/posts/page/4/">4</a></li>
+    
+    
     <li class="page-item">
     <a href="/posts/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li class="page-item">
-        <a href="/posts/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/posts/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

@@ -39,7 +39,7 @@
 
 <meta itemprop="datePublished" content="2019-11-21T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-11-21T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="19">
+<meta itemprop="wordCount" content="114">
 
 
 
@@ -157,10 +157,53 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Release 1.1.2</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<p>Information is comming soon.
-Please read the changelog till the new blog post was released.</p>
+<p>Release 1.1.2</p>
+
+<p>With the release of cf-puppeteer 1.1.2 we worked on backporting some v3 features to the <code>legacy-push</code> option.
+We also implemented the possibility to use all features with docker images.</p>
+
+<p>All new features and bugfixes are listed below.</p>
+
+<p>New Legacy-push options:</p>
+
+<pre><code class="language-bash">--route-only
+--no-route
+</code></pre>
+
+<p>New v3 options:</p>
+
+<pre><code class="language-bash">--docker-image
+--docker-username
+</code></pre>
+
+<hr />
+
+<h2 id="feedback">Feedback</h2>
+
+<p>Please give some feedback and open a issues if you find one. <a href="https://github.com/HappyTobi/cf-puppeteer/issues">github-issue tracker</a></p>
+
+<h2 id="changelog">Changelog</h2>
+
+<h3 id="changed">Changed 🛠</h3>
+
+<ul>
+<li>refactor environment parsing</li>
+<li>cleanup code</li>
+<li>update documentation</li>
+<li>back port &ldquo;&ndash;no-route&rdquo; and &ldquo;&ndash;route-only&rdquo; option to &ldquo;&ndash;legacy-push&rdquo; (v2).</li>
+<li>enable docker support</li>
+<li>drop old <code>vendor-option</code> (replaced by <code>venerable-option</code>)</li>
+<li>printing the help option, was now sorted</li>
+</ul>
+
+<h3 id="fixed">Fixed 🐛</h3>
+
+<ul>
+<li>More stable environment variable parsing.</li>
+<li>Improve error handling while uploading artifact</li>
+</ul>
 
 <hr />
 
