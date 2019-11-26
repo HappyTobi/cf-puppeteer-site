@@ -8,7 +8,7 @@ title: "Version 1.1.1"
 
 Release 1.1.1
 
-With the release of cf-puppeteer with version 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
+With the release of cf-puppeteer 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
 
 All new features and bugfixes are listed below.
 

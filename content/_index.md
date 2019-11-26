@@ -93,7 +93,7 @@ You can find all released versions on Github
 
 [Overview versions](https://github.com/HappyTobi/cf-puppeteer/releases)
 
-Latest version: 1.1.2
+Latest version: 1.1.3
 
 --- 
 
