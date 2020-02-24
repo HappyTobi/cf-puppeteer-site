@@ -6,7 +6,7 @@
     
     <title>CF-Puppeteer  | release</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.65.3" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -34,12 +34,9 @@
 <meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/tags/release/" />
-
-<meta property="og:updated_time" content="2019-11-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-02-24T00:00:00+00:00" />
 <meta itemprop="name" content="release">
-<meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
-
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="release"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
@@ -143,6 +140,26 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/release_1.2.0/" class="link black dim">
+        Version 1.2.0
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Release 1.2.0
+With the release of cf-puppeteer 1.2.0 we just fixed some bugs and bring some droped features back.
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Features 🚀  --vars-file argument was available again, so it&rsquo;s possible to use manifest files with placeholderst  Changed 🛠  All routes will be switched lazy (after starting up the new application) Dropped CF_PUPPETEER_TRACE and replace them with CF_TRACE (read the README &ldquo;Known issues section&rdquo; for using it)  Fixed 🐛  Error while passing environment variables on legacy push (&ndash;env) Typos, error messages   Download: Github
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/release_1.1.3/" class="link black dim">
         Version 1.1.3
       </a>
@@ -150,8 +167,8 @@
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Release 1.1.3
 With the release of cf-puppeteer 1.1.3 we just fixed and improve some small but important things.
-Feedback Please give some feedback and open a issues if you find one. github-issue tracker
-Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages   Download: Github
     </div>
   </div>
 </div>
@@ -172,7 +189,7 @@ Changelog Changed 🛠  Improve logging Add error message for manifest path decl
 With the release of cf-puppeteer 1.1.2 we worked on backporting some v3 features to the legacy-push option. We also implemented the possibility to use all features with docker images.
 All new features and bugfixes are listed below.
 New Legacy-push options:
---route-only --no-route  New v3 options:
+--route-only --no-route New v3 options:
 --docker-image --docker-username  Feedback Please give some feedback and open a issues if you find one. github-issue tracker
 Changelog Changed 🛠  refactor environment parsing cleanup code update documentation back port &ldquo;&ndash;no-route&rdquo; and &ldquo;&ndash;route-only&rdquo; option to &ldquo;&ndash;legacy-push&rdquo; (v2).
     </div>
@@ -195,7 +212,7 @@ Changelog Changed 🛠  refactor environment parsing cleanup code update documen
 With the release of cf-puppeteer 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
 All new features and bugfixes are listed below.
 --no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
-cf zero-downtime-push -f .
+cf zero-downtime-push -f ./manifest.yml --no-routes now you can add new services or what ever you want.
     </div>
   </div>
 </div>
@@ -216,7 +233,7 @@ cf zero-downtime-push -f .
 With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
 The new features and bugfixes are listed below.
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
     </div>
   </div>
 </div>
@@ -310,7 +327,7 @@ Changelog Added  add -vendor-option to stop old service instead of deletion add 
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Release 0.0.12 was a feature and bugfix release.
 With the release we changed following things
-Changelog Added  add -env argument to pass environment variables  Changed  Change buildscript to generate sha1 sums for each file  Fixed  timeout issue with specified timout at manifest (before -t worked only) documentation  Download: Github
+Changelog Added  add -env argument to pass environment variables  Changed  Change buildscript to generate sha1 sums for each file  Fixed  timeout issue with specified timout at manifest (before -t worked only) documentation   Download: Github
     </div>
   </div>
 </div>
@@ -328,7 +345,7 @@ Changelog Added  add -env argument to pass environment variables  Changed  Chang
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       New new release verion of cf-puppeteer was just a rename because a naming confict of cf-plugins Issue
-Download: Github
+ Download: Github
     </div>
   </div>
 </div>
@@ -342,7 +359,7 @@ Download: Github
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cf-puppeteer.happytobi.com/" >
-    &copy; 2019 CF-Puppeteer
+    &copy; 2020 CF-Puppeteer
   </a>
     <div>
 

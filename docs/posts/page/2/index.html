@@ -6,7 +6,7 @@
     
     <title>CF-Puppeteer  | News</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.65.3" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -34,12 +34,9 @@
 <meta property="og:description" content="Release posts about zero-downtime plugin." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/posts/" />
-
-<meta property="og:updated_time" content="2019-11-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-02-24T00:00:00+00:00" />
 <meta itemprop="name" content="News">
-<meta itemprop="description" content="Release posts about zero-downtime plugin.">
-
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Release posts about zero-downtime plugin."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="News"/>
 <meta name="twitter:description" content="Release posts about zero-downtime plugin."/>
 
@@ -143,6 +140,25 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/release_1.1.1/" class="link black dim">
+        Version 1.1.1
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Release 1.1.1
+With the release of cf-puppeteer 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
+All new features and bugfixes are listed below.
+--no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
+cf zero-downtime-push -f ./manifest.yml --no-routes now you can add new services or what ever you want.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/release_1.1.0/" class="link black dim">
         Version 1.1.0
       </a>
@@ -152,7 +168,7 @@
 With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
 The new features and bugfixes are listed below.
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
     </div>
   </div>
 </div>
@@ -170,23 +186,6 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
       Release 1.0.0 - Final release is here
 With the first final release we bring the version 1.0.0 to cf-puppeteer. We bring some small features, many bug fixes and a complete refactoring of the old version of cf-puppeterr.
 Right now it&rsquo;s possible to choose between an v2 or v3 cf push of your application. CF-Puppeteer checks the cf-controller version and use the v3 push if it&rsquo;s possible. To use the old push manually you can pass the option: --legacy-push
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/release_1.0.0-rc0/" class="link black dim">
-        Version 1.0.0-rc.0
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Release 1.0.0-rc.0 - First release candiate
-With the first rc we dont bring &ldquo;new&rdquo; features!, we just pushed the deployment on the newest level of cf api&rsquo;s. The new version now supports the newest structure of cf-manifests.yml files. The plugin is also a &ldquo;complete&rdquo; rewrite of the older versions.
-For the new rc versions we will focus on bringing docker support, adding more tests and clean / simplify the plugin implementation.
     </div>
   </div>
 </div>
@@ -266,7 +265,7 @@ For the new rc versions we will focus on bringing docker support, adding more te
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cf-puppeteer.happytobi.com/" >
-    &copy; 2019 CF-Puppeteer
+    &copy; 2020 CF-Puppeteer
   </a>
     <div>
 

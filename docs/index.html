@@ -6,7 +6,7 @@
     
     <title>CF-Puppeteer  | CF-Puppeteer: zero-downtime plugin</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.65.3" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -34,12 +34,9 @@
 <meta property="og:description" content="The Zero-downtime plugin for your cf cli." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cf-puppeteer.happytobi.com/" />
-
-<meta property="og:updated_time" content="2019-11-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-02-24T00:00:00+00:00" />
 <meta itemprop="name" content="CF-Puppeteer: zero-downtime plugin">
-<meta itemprop="description" content="The Zero-downtime plugin for your cf cli.">
-
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="The Zero-downtime plugin for your cf cli."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CF-Puppeteer: zero-downtime plugin"/>
 <meta name="twitter:description" content="The Zero-downtime plugin for your cf cli."/>
 
@@ -135,126 +132,79 @@
     <main class="pb7" role="main">
       
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-
-<p>Welcome to documentation of the CF-Puppeteer cf plugin.
+    <p>Welcome to documentation of the CF-Puppeteer cf plugin.
 The plugin was active maintained and fixed some issues from older versions of zero-downtime plugin.
 So see all upcoming features or changes read the <a href="https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md">Changelog</a> on github.</p>
-
 <h1 id="installation">Installation</h1>
-
 <h2 id="cf-community">CF-Community</h2>
-
 <pre><code>$ cf install-plugin -r CF-Community &quot;cf-puppeteer&quot;
-</code></pre>
-
-<h2 id="binary">Binary</h2>
-
+</code></pre><h2 id="binary">Binary</h2>
 <pre><code>$ cf install-plugin path/to/downloaded/binary
-</code></pre>
-
-<h1 id="usage">Usage</h1>
-
+</code></pre><h1 id="usage">Usage</h1>
 <pre><code>$ cf zero-downtime-push [&lt;App-Name&gt;] -f &lt;Manifest.yml&gt; [options]
-</code></pre>
-
-<h2 id="options">Options</h2>
-
+</code></pre><h2 id="options">Options</h2>
 <p>The options you can use depends on v3 or legacy push</p>
-
-<h3 id="v3-push-without-legacy-push">V3 Push (without &ndash;legacy-push)</h3>
-
-<pre><code class="language-bash">-f                              path to application manifest
+<h3 id="v3-push-without---legacy-push">V3 Push (without &ndash;legacy-push)</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-f                              path to application manifest
 -p                              path to application files
 -s                              name of the stack to use
--t                              push timeout (in secounds)
+-t                              push timeout <span style="color:#f92672">(</span>in secounds<span style="color:#f92672">)</span>
 --env                           add environment key value pairs dynamic; can specity multiple times
 --venerable-action              option to delete or stop vendor application - default is delete,
 --health-check-type             type of health check to perform,
---health-check-http-endpoint    endpoint for the 'http' health check type,
---invocation-timeout            timeout (in seconds) that controls individual health check invocations,
+--health-check-http-endpoint    endpoint <span style="color:#66d9ef">for</span> the <span style="color:#e6db74">&#39;http&#39;</span> health check type,
+--invocation-timeout            timeout <span style="color:#f92672">(</span>in seconds<span style="color:#f92672">)</span> that controls individual health check invocations,
 --process                       application process to update,
---show-crash-log                show recent logs when applications crashes while the deployment
+--show-crash-log                show recent logs when applications crashes <span style="color:#66d9ef">while</span> the deployment
 --no-route                      deploy new application without adding routes
 --route-only                    add routes from manifest to application only
---no-start                      don't start application after deployment
---docker-image                  docker image url                                                           (⭐️New since 1.1.2)
---docker-username               docker repository username; used with password from env CF_DOCKER_PASSWORD (⭐️New since 1.1.2)
-</code></pre>
-
-<h3 id="legacy-push-legacy-push-arg">Legacy-push (&ndash;legacy-push arg)</h3>
-
-<pre><code class="language-bash">-f                              path to application manifest
+--no-start                      don<span style="color:#960050;background-color:#1e0010">&#39;</span>t start application after deployment
+--docker-image                  docker image url                                                           <span style="color:#f92672">(</span>⭐️New since 1.1.2<span style="color:#f92672">)</span>
+--docker-username               docker repository username; used with password from env CF_DOCKER_PASSWORD <span style="color:#f92672">(</span>⭐️New since 1.1.2<span style="color:#f92672">)</span>
+--vars-file                     path to a variable substitution file <span style="color:#66d9ef">for</span> manifest                          <span style="color:#f92672">(</span>⭐️New since 1.2.0<span style="color:#f92672">)</span>
+</code></pre></div><h3 id="legacy-push---legacy-push-arg">Legacy-push (&ndash;legacy-push arg)</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-f                              path to application manifest
 -p                              path to application files
 -s                              name of the stack to use
--t                              push timeout (in secounds)
+-t                              push timeout <span style="color:#f92672">(</span>in secounds<span style="color:#f92672">)</span>
 --env                            add environment key value pairs dynamic; can specity multiple times
 --legacy-push                   use legacy push instead of new v3 api
---show-crash-log                show recent logs when applications crashes while the deployment
---no-start                      don't start application after deployment
---no-route                      deploy new application without adding routes (⭐️New since 1.1.2)
---route-only                    add routes from manifest to application only (⭐️New since 1.1.2)
-</code></pre>
-
-<h3 id="example">Example</h3>
-
+--show-crash-log                show recent logs when applications crashes <span style="color:#66d9ef">while</span> the deployment
+--no-start                      don<span style="color:#960050;background-color:#1e0010">&#39;</span>t start application after deployment
+--no-route                      deploy new application without adding routes        <span style="color:#f92672">(</span>⭐️New since 1.1.2<span style="color:#f92672">)</span>
+--route-only                    add routes from manifest to application only        <span style="color:#f92672">(</span>⭐️New since 1.1.2<span style="color:#f92672">)</span>
+--vars-file                     path to a variable substitution file <span style="color:#66d9ef">for</span> manifest   <span style="color:#f92672">(</span>⭐️New since 1.2.0<span style="color:#f92672">)</span>
+</code></pre></div><h3 id="example">Example</h3>
 <pre><code>$ cf zero-downtime-push -f manifest.yml --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
-</code></pre>
-
-<h3 id="legacy-push-example">Legacy push Example</h3>
-
+</code></pre><h3 id="legacy-push-example">Legacy push Example</h3>
 <pre><code>$ cf zero-downtime-push -f manifest.yml --legacy-push --env DB_PORT=3306 --env DB_VENDOR=MYSQL -t 120 --show-crash-log
-</code></pre>
-
-<h2 id="tracing">Tracing</h2>
-
+</code></pre><h2 id="tracing">Tracing</h2>
 <p>To show more informations while running the plugin you have to set the environment variable CF_PUPPETEER_TRACE to true</p>
-
 <pre><code>export CF_PUPPETEER_TRACE=true
-</code></pre>
-
-<p>If you&rsquo;re using a UNIX System you can also combine it with CF_TRACE</p>
-
+</code></pre><p>If you&rsquo;re using a UNIX System you can also combine it with CF_TRACE</p>
 <pre><code>CF_TRACE=/dev/stdout cf zero-downtime-push ...
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h1 id="version">Version</h1>
-
 <p>You can find all released versions on Github</p>
-
 <p><a href="https://github.com/HappyTobi/cf-puppeteer/releases">Overview versions</a></p>
-
-<p>Latest version: 1.1.3</p>
-
-<hr />
-
+<p>Latest version: 1.2.0</p>
+<hr>
 <h1 id="changelog">Changelog</h1>
-
 <p>All changes and features of the upcoming release are complete documented at the <a href="https://github.com/HappyTobi/cf-puppeteer/blob/master/CHANGELOG.md">Changelog</a>.</p>
-
-<hr />
-
+<hr>
 <h1 id="about">About</h1>
-
 <h2 id="source">Source</h2>
-
 <p>The source code an be found on: <a href="https://github.com/HappyTobi/cf-puppeteer/">Github</a></p>
-
 <h2 id="issues">Issues</h2>
-
 <p>If there are any issue or bug pleas open an a <a href="https://github.com/HappyTobi/cf-puppeteer/issues">Issue on Github</a></p>
-
 <h2 id="like">Like</h2>
-
 <p>If you like the plugin, don&rsquo;t forget to give it a ★ <a href="https://github.com/HappyTobi/cf-puppeteer/">star</a> on github</p>
-
 <h2 id="contributors">Contributors</h2>
-
-<p>Special thanks to all contributors
-- <a href="https://github.com/skyfalke">Skyfalke</a>
-- <a href="https://github.com/devorbitus">devorbitus</a></p>
+<p>Special thanks to all contributors</p>
+<ul>
+<li><a href="https://github.com/skyfalke">Skyfalke</a></li>
+<li><a href="https://github.com/devorbitus">devorbitus</a></li>
+</ul>
 
   </article>
   
@@ -289,6 +239,41 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
           
         
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/posts/release_1.2.0/" class="db grow">
+            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-1.2.0.jpg" class="img" alt="image from Version 1.2.0">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/release_1.2.0/" class="color-inherit dim link">
+            Version 1.2.0
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Release 1.2.0
+With the release of cf-puppeteer 1.2.0 we just fixed some bugs and bring some droped features back.
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Features 🚀  --vars-file argument was available again, so it&rsquo;s possible to use manifest files with placeholderst  Changed 🛠  All routes will be switched lazy (after starting up the new application) Dropped CF_PUPPETEER_TRACE and replace them with CF_TRACE (read the README &ldquo;Known issues section&rdquo; for using it)  Fixed 🐛  Error while passing environment variables on legacy push (&ndash;env) Typos, error messages   Download: Github
+        </div>
+          <a href="/posts/release_1.2.0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="/posts/release_1.1.3/" class="db grow">
             <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-1.1.3.jpg" class="img" alt="image from Version 1.1.3">
           </a>
@@ -303,8 +288,8 @@ So see all upcoming features or changes read the <a href="https://github.com/Hap
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           Release 1.1.3
 With the release of cf-puppeteer 1.1.3 we just fixed and improve some small but important things.
-Feedback Please give some feedback and open a issues if you find one. github-issue tracker
-Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages   Download: Github
         </div>
           <a href="/posts/release_1.1.3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -340,7 +325,7 @@ Changelog Changed 🛠  Improve logging Add error message for manifest path decl
 With the release of cf-puppeteer 1.1.2 we worked on backporting some v3 features to the legacy-push option. We also implemented the possibility to use all features with docker images.
 All new features and bugfixes are listed below.
 New Legacy-push options:
---route-only --no-route  New v3 options:
+--route-only --no-route New v3 options:
 --docker-image --docker-username  Feedback Please give some feedback and open a issues if you find one. github-issue tracker
 Changelog Changed 🛠  refactor environment parsing cleanup code update documentation back port &ldquo;&ndash;no-route&rdquo; and &ldquo;&ndash;route-only&rdquo; option to &ldquo;&ndash;legacy-push&rdquo; (v2).
         </div>
@@ -378,45 +363,9 @@ Changelog Changed 🛠  refactor environment parsing cleanup code update documen
 With the release of cf-puppeteer 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
 All new features and bugfixes are listed below.
 --no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
-cf zero-downtime-push -f .
+cf zero-downtime-push -f ./manifest.yml --no-routes now you can add new services or what ever you want.
         </div>
           <a href="/posts/release_1.1.1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/posts/release_1.1.0/" class="db grow">
-            <img src="https://cf-puppeteer.happytobi.com/images/cf-puppeteer-1.1.0.jpg" class="img" alt="image from Version 1.1.0">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/release_1.1.0/" class="color-inherit dim link">
-            Version 1.1.0
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Release 1.1.0
-With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
-The new features and bugfixes are listed below.
---no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:
-        </div>
-          <a href="/posts/release_1.1.0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -431,6 +380,12 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/release_1.1.0/" class="link black dim">
+              Version 1.1.0
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/release_1.0.0/" class="link black dim">
@@ -450,12 +405,6 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
             </a>
           </h2>
         
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/release_0.0.13/" class="link black dim">
-              Version 0.0.13
-            </a>
-          </h2>
-        
 
         
         
@@ -471,7 +420,7 @@ cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right n
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cf-puppeteer.happytobi.com/" >
-    &copy; 2019 CF-Puppeteer
+    &copy; 2020 CF-Puppeteer
   </a>
     <div>
 

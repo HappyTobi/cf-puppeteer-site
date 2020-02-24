@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Tue, 26 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.2.0</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.2.0/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.2.0/</guid>
+      <description>Release 1.2.0
+With the release of cf-puppeteer 1.2.0 we just fixed some bugs and bring some droped features back.
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Features 🚀  --vars-file argument was available again, so it&amp;rsquo;s possible to use manifest files with placeholderst  Changed 🛠  All routes will be switched lazy (after starting up the new application) Dropped CF_PUPPETEER_TRACE and replace them with CF_TRACE (read the README &amp;ldquo;Known issues section&amp;rdquo; for using it)  Fixed 🐛  Error while passing environment variables on legacy push (&amp;ndash;env) Typos, error messages   Download: Github</description>
+    </item>
     
     <item>
       <title>Version 1.1.3</title>
@@ -20,8 +32,8 @@
       <guid>https://cf-puppeteer.happytobi.com/posts/release_1.1.3/</guid>
       <description>Release 1.1.3
 With the release of cf-puppeteer 1.1.3 we just fixed and improve some small but important things.
-Feedback Please give some feedback and open a issues if you find one. github-issue tracker
-Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages</description>
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Changed 🛠  Improve logging Add error message for manifest path declarative (when the path contains a wildcard)  Fixed 🐛  Venerable application will be deleted correct after pushing a application Typos, error messages   Download: Github</description>
     </item>
     
     <item>
@@ -34,7 +46,7 @@ Changelog Changed 🛠  Improve logging Add error message for manifest path decl
 With the release of cf-puppeteer 1.1.2 we worked on backporting some v3 features to the legacy-push option. We also implemented the possibility to use all features with docker images.
 All new features and bugfixes are listed below.
 New Legacy-push options:
---route-only --no-route  New v3 options:
+--route-only --no-route New v3 options:
 --docker-image --docker-username  Feedback Please give some feedback and open a issues if you find one. github-issue tracker
 Changelog Changed 🛠  refactor environment parsing cleanup code update documentation back port &amp;ldquo;&amp;ndash;no-route&amp;rdquo; and &amp;ldquo;&amp;ndash;route-only&amp;rdquo; option to &amp;ldquo;&amp;ndash;legacy-push&amp;rdquo; (v2).</description>
     </item>
@@ -49,7 +61,7 @@ Changelog Changed 🛠  refactor environment parsing cleanup code update documen
 With the release of cf-puppeteer 1.1.1 we worked on some feedback of the community and make the usability easier and more user friendly
 All new features and bugfixes are listed below.
 --no-route --venerable-action  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment. (Venerable-action will be set to none automatically )
-cf zero-downtime-push -f .</description>
+cf zero-downtime-push -f ./manifest.yml --no-routes now you can add new services or what ever you want.</description>
     </item>
     
     <item>
@@ -62,7 +74,7 @@ cf zero-downtime-push -f .</description>
 With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.
 The new features and bugfixes are listed below.
 --no-route --route-only  Examples No-routes Deploy the application without route switching - old application should still run and new one should be stoped after deployment
-cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none  right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:</description>
+cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none right now you can add new services or what ever you want. To start the new application with routes and cleanup the old one you can do the following things:</description>
     </item>
     
     <item>
@@ -116,7 +128,7 @@ Changelog Added  add -vendor-option to stop old service instead of deletion add 
       <guid>https://cf-puppeteer.happytobi.com/posts/release_0.0.12/</guid>
       <description>Release 0.0.12 was a feature and bugfix release.
 With the release we changed following things
-Changelog Added  add -env argument to pass environment variables  Changed  Change buildscript to generate sha1 sums for each file  Fixed  timeout issue with specified timout at manifest (before -t worked only) documentation  Download: Github</description>
+Changelog Added  add -env argument to pass environment variables  Changed  Change buildscript to generate sha1 sums for each file  Fixed  timeout issue with specified timout at manifest (before -t worked only) documentation   Download: Github</description>
     </item>
     
     <item>
@@ -126,7 +138,7 @@ Changelog Added  add -env argument to pass environment variables  Changed  Chang
       
       <guid>https://cf-puppeteer.happytobi.com/posts/release_0.0.11/</guid>
       <description>New new release verion of cf-puppeteer was just a rename because a naming confict of cf-plugins Issue
-Download: Github</description>
+ Download: Github</description>
     </item>
     
   </channel>

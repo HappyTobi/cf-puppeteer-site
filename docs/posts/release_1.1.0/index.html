@@ -6,7 +6,7 @@
     
     <title>CF-Puppeteer  | Version 1.1.0</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.65.3" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -35,16 +35,13 @@
 <meta property="article:modified_time" content="2019-06-29T00:00:00+00:00" />
 <meta itemprop="name" content="Version 1.1.0">
 <meta itemprop="description" content="New CF-Release">
-
-
 <meta itemprop="datePublished" content="2019-06-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-06-29T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="184">
 
 
 
-<meta itemprop="keywords" content="release," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="release," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Version 1.1.0"/>
 <meta name="twitter:description" content="New CF-Release"/>
 
@@ -157,67 +154,40 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<p>Release 1.1.0</p>
-
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Release 1.1.0</p>
 <p>With the release of cf-puppeteer version 1.1.0 we bring some new features and bugfixes.</p>
-
 <p>The new features and bugfixes are listed below.</p>
-
-<pre><code class="language-bash">--no-route
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">--no-route
 --route-only
-</code></pre>
-
-<hr />
-
+</code></pre></div><hr>
 <h2 id="examples">Examples</h2>
-
 <h3 id="no-routes">No-routes</h3>
-
 <p>Deploy the application without route switching - old application should still run and new one should be stoped after deployment</p>
-
-<pre><code class="language-bash">cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none
-</code></pre>
-
-<p>right now you can add new services or what ever you want.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cf zero-downtime-push -f ./manifest.yml --no-route --vendor-option none
+</code></pre></div><p>right now you can add new services or what ever you want.
 To start the new application with routes and cleanup the old one you can do the following things:</p>
-
-<pre><code class="language-bash">cf zero-downtime-push -f ./manifest.yml --routes-only
-</code></pre>
-
-<hr />
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cf zero-downtime-push -f ./manifest.yml --routes-only
+</code></pre></div><hr>
 <h2 id="feedback">Feedback</h2>
-
 <p>Please give some feedback and open a issues if you find one. <a href="https://github.com/HappyTobi/cf-puppeteer/issues">github-issue tracker</a></p>
-
 <h2 id="changelog">Changelog</h2>
-
-<h3 id="changed">Changed 🛠</h3>
-
+<h3 id="changed-">Changed 🛠</h3>
 <ul>
 <li>vendor-option argument now supports the options: &ldquo;stop,delete,none&rdquo;</li>
 <li>env argument changed to POSIX style. (&ndash;env)</li>
 </ul>
-
-<h3 id="fixed">Fixed 🐛</h3>
-
+<h3 id="fixed-">Fixed 🐛</h3>
 <ul>
 <li>upload file with v3 api temp file path generation was wrong</li>
 <li>delete application and rename vendor app when upload fails</li>
 </ul>
-
-<h3 id="features">Features 🚀</h3>
-
+<h3 id="features-">Features 🚀</h3>
 <ul>
 <li>no-routes option added - ignore route switching, should be combined with vendor-option</li>
 <li>route-only add routes only - took routes from manifest and add them to the application (without vendor extension)</li>
 <li>no-start option for new deployed application</li>
 </ul>
-
-<hr />
-
+<hr>
 <p>Download:
 <a href="https://github.com/HappyTobi/cf-puppeteer/releases/tag/1.1.0">Github</a></p>
 <ul class="pa0">
@@ -277,7 +247,7 @@ To start the new application with routes and cleanup the old one you can do the 
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://cf-puppeteer.happytobi.com/" >
-    &copy; 2019 CF-Puppeteer
+    &copy; 2020 CF-Puppeteer
   </a>
     <div>
 
