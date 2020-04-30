@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>HappyTobi / Tobias Schug</copyright>
-    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cf-puppeteer.happytobi.com/tags/release/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Version 1.2.1</title>
+      <link>https://cf-puppeteer.happytobi.com/posts/release_1.2.1/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cf-puppeteer.happytobi.com/posts/release_1.2.1/</guid>
+      <description>Release 1.2.1
+With the release of cf-puppeteer 1.2.0 we just fixed some bugs that introduces in the version 1.2.0.
+ Feedback Please give some feedback and open a issues if you find one. github-issue tracker
+Changelog Changed 🛠  add more trace logging make tests more stable  Fixed 🐛  find matching routes pss a vars file combined with &amp;lsquo;legacy-push&amp;rsquo;  Github Issues 🐙 To get some more insides about the changes / fixes, you can see all the github issues that are part of the new version.</description>
+    </item>
     
     <item>
       <title>Version 1.2.0</title>

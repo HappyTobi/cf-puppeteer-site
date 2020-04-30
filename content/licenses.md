@@ -21,6 +21,7 @@ here you can find all used images from the website
 - [Unsplash - Release 1.1.2 - Luc Tribolet](https://unsplash.com/photos/9RwODwa_JLg/download?force=true)
 - [Unsplash - Release 1.1.3 - NeONBRAND](https://unsplash.com/photos/CuDoRFyTkAQ/download?force=true)
 - [Unsplash - Release 1.2.0 - Chris Arock](https://unsplash.com/photos/sZdI8vmNK-E/download?force=true)
+- [Unsplash - Release 1.2.1 - Mitchell Luo](https://unsplash.com/photos/0yqzZGfpPx4/download?force=true)
 
 ## Source-Code
 In the past CF-Puppeteer was a fork from [autopilot](https://github.com/contraband/autopilot) plugin
